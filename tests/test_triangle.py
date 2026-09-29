@@ -30,7 +30,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_area_7(self):
         res = area(-4, 5)
-        self.assertAlmostEqual(res, 0)
+        self.assertAlmostEqual(res, -1)
 
 
     def test_perimeter_1(self):
@@ -59,8 +59,8 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_7(self):
         res = perimeter(3, -4, 5)
-        self.assertAlmostEqual(res, 0)
+        self.assertAlmostEqual(res, -1)
     
     def test_perimeter_8(self):
         res = perimeter(8, 4, 3)
-        self.assertAlmostEqual(res, 0)
+        self.assertAlmostEqual(res, -1)

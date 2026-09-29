@@ -1,7 +1,6 @@
 import unittest
 from figures.square import area, perimeter
 
-
 class SquareTestCase(unittest.TestCase):
 
     def test_area_1(self):
@@ -30,7 +29,7 @@ class SquareTestCase(unittest.TestCase):
     
     def test_area_7(self):
         res = area(-10)
-        self.assertAlmostEqual(res, 0)
+        self.assertAlmostEqual(res, -1)
 
 
     def test_perimeter_1(self):
@@ -59,4 +58,4 @@ class SquareTestCase(unittest.TestCase):
 
     def test_perimeter_7(self):
         res = perimeter(-4)
-        self.assertAlmostEqual(res, 0)
+        self.assertAlmostEqual(res, -1)
